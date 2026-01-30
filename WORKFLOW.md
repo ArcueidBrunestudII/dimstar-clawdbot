@@ -16,9 +16,9 @@
 
 2. **将所有输出文件放入对应文件夹**
 
-3. **提交到 Git**
+3. **只提交代码文件到 Git**
    ```bash
-   git add .
+   git add scripts/ projects/ docs/ README.md WORKFLOW.md
    git commit -m "描述"
    git push
    ```
@@ -26,6 +26,10 @@
 4. **告诉用户**
    - ✅ 本地路径：`/root/clawd/xxx/`
    - 🌐 GitHub 地址：`https://github.com/ArcueidBrunestudII/dimstar-clawdbot/tree/master/xxx`
+
+**⚠️ 重要：不要提交配置文件**
+- 不要提交：AGENTS.md, SOUL.md, USER.md, MEMORY.md, memory/, skills/ 等
+- 只提交：代码文件、项目文件、文档
 
 ---
 

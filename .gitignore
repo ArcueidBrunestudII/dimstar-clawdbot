@@ -1,0 +1,15 @@
+# Clawd 配置文件 - 不要提交到 GitHub
+
+AGENTS.md
+BOOTSTRAP.md
+SOUL.md
+TOOLS.md
+USER.md
+IDENTITY.md
+HEARTBEAT.md
+MEMORY.md
+memory/
+skills/
+canvas/
+temp/
+.pi_calculator.py.swp
