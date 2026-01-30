@@ -44,6 +44,36 @@
 - **每次会话开始时必须读取 SOUL.md、USER.md、MEMORY.md**
 
 ### 操作规范
+
+### 代码与文件管理（2026-01-30）
+**核心工作流程**：
+1. **输出文件时**：
+   - 创建合适的文件夹（`projects/`, `scripts/`, `tools/` 等）
+   - 将所有文件放入对应文件夹
+   - **必须 git add/commit/push 到仓库**
+   - 告诉用户本地路径 + GitHub 地址
+
+2. **接收文件指令时**：
+   - **先 git pull** 拉取最新代码
+   - 从仓库查找文件
+   - 没有再询问用户
+
+3. **仓库信息**：
+   - 本地：`/root/clawd`
+   - GitHub：`https://github.com/ArcueidBrunestudII/dimstar-clawdbot`
+   - 推送方式：SSH Deploy Key
+   - 操作前必先 `git pull`
+
+**文件夹结构**：
+```
+projects/     # 项目文件
+scripts/      # 各种脚本
+tools/        # 工具类
+docs/         # 文档
+temp/         # 临时文件
+```
+
+### 系统操作
 - **操作系统前必须先读取本地技能**:
   - `/root/clawd/skills/moltbot-ops/SKILL.md` - 系统运维和故障排查
 - **禁止瞎试**: 不确定的命令或配置变更要先询问用户
